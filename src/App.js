@@ -7,8 +7,8 @@ let name = "Test User";
 function App() {
   return (
     <>
-      <TestComponent />
-      {/* <ClassComponent /> */}
+      {/* <TestComponent /> */}
+      <ClassComponent />
     </>
   );
 }
