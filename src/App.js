@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import TestComponent from './components/TestComponent';
-import ClassComponent from './components/ClassComponent';
+import ClassComponent from './components/class_components/ClassComponent';
+
 
 let name = "Test User";
 function App() {

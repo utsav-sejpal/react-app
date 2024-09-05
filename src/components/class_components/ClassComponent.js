@@ -18,6 +18,7 @@ export default class ClassComponent extends Component {
         });
     }
 
+
     showComponent = () => {
         this.setState({
             showComponent: !this.state.showComponent
@@ -40,10 +41,14 @@ export default class ClassComponent extends Component {
         return (
             <>
                 <h3>Count: {this.state.count}</h3>
-                <h3>Show Component: {this.state.showComponent}</h3>
-                <button onClick={() => this.showComponent()}>Show Component</button>
-                {this.state.showComponent ? <ClassComponent1 data="Data from parent component" /> : ''}
                 <button onClick={() => this.increaseCount()}>Increase Count</button>
+                <ClassComponent1 count={this.state.count} />
+
+
+                {/* <button onClick={() => this.showComponent()}>Show Component</button>
+                <h3>Show Component: {this.state.showComponent}</h3>
+                {this.state.showComponent ? <ClassComponent1 data="Data from parent component" /> : ''}
+                 */}
             </>
         )
     }
