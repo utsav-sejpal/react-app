@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 function StudentComponent(props) {
     // console.log(props);
     return (
@@ -10,11 +8,5 @@ function StudentComponent(props) {
         </>
     )
 }
-
-StudentComponent.propTypes = {
-    name: PropTypes.string.isRequired,
-};
-
-// StudentComponent.defaultProps = {};
 
 export default StudentComponent;
