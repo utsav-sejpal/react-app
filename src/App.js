@@ -6,7 +6,6 @@ import SchoolComponent from './components/practice/props/SchoolComponent';
 import ParentComponent from './components/practice/props/props_validation/ParentComponent';
 import EventComponent from './components/practice/Events/EventComponent';
 
-
 let name = "Test User";
 function App() {
   return (
@@ -14,8 +13,8 @@ function App() {
       {/* <TestComponent /> */}
       {/* <ClassComponent /> */}
       {/* <SchoolComponent /> */}
-      <ParentComponent />
-      {/* <EventComponent /> */}
+      {/* <ParentComponent /> */}
+      <EventComponent />
     </>
   );
 }
