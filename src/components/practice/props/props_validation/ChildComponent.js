@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function ChildComponent(props) {
+    console.log(props.components);
     return (
         <div>
             <h1>Child Component</h1>
@@ -14,5 +15,9 @@ export default function ChildComponent(props) {
 ChildComponent.propTypes = {
     name: PropTypes.string.isRequired,
     count: PropTypes.number,
+    components: PropTypes.shape({
+        ram: PropTypes.number,
+        cpu: PropTypes.string
+    })
     // size: PropTypes.oneOf(['small', 'medium', 'large'])
 }

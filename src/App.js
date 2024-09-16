@@ -14,9 +14,9 @@ function App() {
       {/* <TestComponent /> */}
       {/* <ClassComponent /> */}
       {/* <SchoolComponent /> */}
-      {/* <ParentComponent /> */}
+      <ParentComponent />
       {/* <EventComponent /> */}
-      <StateHookComponent />
+      {/* <StateHookComponent /> */}
     </>
   );
 }
