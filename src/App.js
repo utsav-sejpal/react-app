@@ -6,6 +6,7 @@ import SchoolComponent from './components/practice/props/SchoolComponent';
 import ParentComponent from './components/practice/props/props_validation/ParentComponent';
 import EventComponent from './components/practice/Events/EventComponent';
 import StateHookComponent from './components/practice/hooks/StateHookComponent';
+import UseEffectHookComponent from './components/practice/hooks/UseEffectHookComponent';
 
 let name = "Test User";
 function App() {
@@ -14,9 +15,10 @@ function App() {
       {/* <TestComponent /> */}
       {/* <ClassComponent /> */}
       {/* <SchoolComponent /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
       {/* <EventComponent /> */}
       {/* <StateHookComponent /> */}
+      <UseEffectHookComponent />
     </>
   );
 }

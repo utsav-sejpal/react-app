@@ -17,7 +17,7 @@ ChildComponent.propTypes = {
     count: PropTypes.number,
     components: PropTypes.shape({
         ram: PropTypes.number,
-        cpu: PropTypes.string
+        cpu: PropTypes.string.isRequired
     })
     // size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
