@@ -7,6 +7,7 @@ import ParentComponent from './components/practice/props/props_validation/Parent
 import EventComponent from './components/practice/Events/EventComponent';
 import StateHookComponent from './components/practice/hooks/StateHookComponent';
 import UseEffectHookComponent from './components/practice/hooks/UseEffectHookComponent';
+import Todo from './components/practice/list_and_keys/Todo';
 
 let name = "Test User";
 function App() {
@@ -19,6 +20,7 @@ function App() {
       {/* <EventComponent /> */}
       {/* <StateHookComponent /> */}
       <UseEffectHookComponent />
+      {/* <Todo /> */}
     </>
   );
 }
