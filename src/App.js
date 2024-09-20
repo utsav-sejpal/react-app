@@ -8,6 +8,7 @@ import EventComponent from './components/practice/Events/EventComponent';
 import StateHookComponent from './components/practice/hooks/StateHookComponent';
 import UseEffectHookComponent from './components/practice/hooks/UseEffectHookComponent';
 import Todo from './components/practice/list_and_keys/Todo';
+import ListAndKeysComponent from './components/practice/list_and_keys/ListAndKeysComponent';
 
 let name = "Test User";
 function App() {
@@ -19,8 +20,9 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <EventComponent /> */}
       {/* <StateHookComponent /> */}
-      <UseEffectHookComponent />
-      {/* <Todo /> */}
+      {/* <UseEffectHookComponent /> */}
+      {/* <ListAndKeysComponent /> */}
+      <Todo />
     </>
   );
 }

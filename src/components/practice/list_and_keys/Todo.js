@@ -24,11 +24,12 @@ function Todo() {
                     <li key={todo.id}>
                         {todo.task}
                         <button onClick={() => removeTask(todo.id)}>Remove</button>
+                        {/* Conditional Rendering */}
+                        {/* {todo.id == 5 ? <button>Edit</button> : 'AddMore'} */}
                     </li>
                 ))}
             </ul>
-            <input
-                type="text"
+            <input type="text"
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
                 placeholder="New task"

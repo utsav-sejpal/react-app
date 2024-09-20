@@ -1,0 +1,14 @@
+import React from 'react'
+
+export default function ListAndKeysComponent() {
+    let items = ['keyboard', 'mouse', 'cpu', 'printer'];
+    return (
+        <div>
+            <ul>
+                {items.map((value, index) =>
+                    <li key={index}>{value}</li>
+                )}
+            </ul>
+        </div>
+    )
+}
