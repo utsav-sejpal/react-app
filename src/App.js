@@ -26,7 +26,8 @@ function App() {
       {/* <ListAndKeysComponent /> */}
       {/* <Todo /> */}
       {/* <Form /> */}
-      <SimpleFormValidation />
+      {/* <SimpleFormValidation /> */}
+      <Form/>
     </>
   );
 }

@@ -1,52 +1,70 @@
 import React, { useState } from "react";
 
-export default function Form() {
-  const [value, setValues] = useState({});
-  const [error, setError] = useState({});
+function FormValidationDemo() {
+  const [formData, setFormData] = useState({ email: "", password: "" });
+  const [errors, setErrors] = useState({});
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(value);
-    
-    if (value.username == "") {
-      alert("user name is empty");
-      return;
-    }
-
-    console.log(value);
-
-    // alert(`The name you entered was: ${name}`);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    // Clear error message when user starts typing
+    setErrors({ ...errors, [name]: "" });
   };
 
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setValues((values) => ({ ...values, [name]: value }));
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { email, password } = formData;
+    let errors = {};
+
+    // Simple validation
+    if (!email) {
+      errors.email = "Email is required";
+    }
+    if (!password) {
+      errors.password = "Password is required";
+    }
+    console.log(Object.keys(errors));
+    if (Object.keys(errors).length > 0) {
+      setErrors(errors);
+    } else {
+      // Form submission logic
+      console.log("Email:", formData.email);
+      console.log("Password:", formData.password);
+    }
   };
 
   return (
-    <>
+    <div>
+      <h2>Login Form</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Enter your name:
+        <div>
+          <label>Email:</label>
           <input
-            type="text"
-            name="username"
-            value={value.username || ""}
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            autoComplete="on"
+          />
+          {errors.email && <span style={{ color: "red" }}>{errors.email}</span>}
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            autoComplete="on"
+            name="password"
+            value={formData.password}
             onChange={handleChange}
           />
-        </label>
-        <label>
-          Enter your age:
-          <input
-            type="number"
-            name="age"
-            value={value.age || ""}
-            onChange={handleChange}
-          />
-        </label>
-        <input type="submit" />
+          {errors.password && (
+            <span style={{ color: "red" }}>{errors.password}</span>
+          )}
+        </div>
+        <button type="submit">Login</button>
       </form>
-    </>
+    </div>
   );
 }
+
+export default FormValidationDemo;

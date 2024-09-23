@@ -6,7 +6,7 @@ export default function ListAndKeysComponent() {
         <div>
             <ul>
                 {items.map((value, index) =>
-                    <li key={index}>{value}</li>
+                    <li>{value}</li>
                 )}
             </ul>
         </div>
