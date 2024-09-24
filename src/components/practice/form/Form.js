@@ -6,6 +6,8 @@ function FormValidationDemo() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    // console.log(e.target);
+    // console.log(formData, name, value);
     setFormData({ ...formData, [name]: value });
     // Clear error message when user starts typing
     setErrors({ ...errors, [name]: "" });
@@ -23,6 +25,7 @@ function FormValidationDemo() {
     if (!password) {
       errors.password = "Password is required";
     }
+
     console.log(Object.keys(errors));
     if (Object.keys(errors).length > 0) {
       setErrors(errors);

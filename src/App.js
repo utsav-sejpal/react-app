@@ -11,6 +11,7 @@ import Todo from "./components/practice/list_and_keys/Todo";
 import ListAndKeysComponent from "./components/practice/list_and_keys/ListAndKeysComponent";
 import Form from "./components/practice/form/Form";
 import SimpleFormValidation from "./components/practice/form/SimpleFormValidation";
+import UseRefHookComponent from "./components/practice/hooks/UseRefHookComponent";
 
 let name = "Test User";
 function App() {
@@ -27,7 +28,8 @@ function App() {
       {/* <Todo /> */}
       {/* <Form /> */}
       {/* <SimpleFormValidation /> */}
-      <Form/>
+      {/* <Form/> */}
+      <UseRefHookComponent />
     </>
   );
 }
