@@ -12,6 +12,7 @@ import ListAndKeysComponent from "./components/practice/list_and_keys/ListAndKey
 import Form from "./components/practice/form/Form";
 import SimpleFormValidation from "./components/practice/form/SimpleFormValidation";
 import UseRefHookComponent from "./components/practice/hooks/UseRefHookComponent";
+import StyleComponent from "./components/practice/style/StyleComponent";
 
 let name = "Test User";
 function App() {
@@ -29,7 +30,8 @@ function App() {
       {/* <Form /> */}
       {/* <SimpleFormValidation /> */}
       {/* <Form/> */}
-      <UseRefHookComponent />
+      {/* <UseRefHookComponent /> */}
+      <StyleComponent />
     </>
   );
 }
