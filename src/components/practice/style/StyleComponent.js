@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
 import './Style.css';
+import styles from './style.module.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function StyleComponent() {
     // const objectStyle = {
@@ -16,6 +18,8 @@ export default function StyleComponent() {
             <h1 style={{ color: 'blue', backgroundColor: 'green' }}>This is Style</h1>
             {/* <div style={objectStyle}>Style form object</div> */}
             <div className={'text'}>Style form object</div>
+            <h3 className={styles.text}>This is Module CSS</h3>
+            <h2 className='text-danger'>Bootstrap Applied!</h2>
         </div>
     )
 }
