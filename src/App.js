@@ -13,6 +13,7 @@ import Form from "./components/practice/form/Form";
 import SimpleFormValidation from "./components/practice/form/SimpleFormValidation";
 import UseRefHookComponent from "./components/practice/hooks/UseRefHookComponent";
 import LiftingStateParent from './components/practice/props/lifting_stateup/ParentComponent';
+import StyleComponent from "./components/practice/style/StyleComponent";
 
 let name = "Test User";
 function App() {
