@@ -12,6 +12,7 @@ import ListAndKeysComponent from "./components/practice/list_and_keys/ListAndKey
 import Form from "./components/practice/form/Form";
 import SimpleFormValidation from "./components/practice/form/SimpleFormValidation";
 import UseRefHookComponent from "./components/practice/hooks/UseRefHookComponent";
+import LiftingStateParent from './components/practice/props/lifting_stateup/ParentComponent';
 
 let name = "Test User";
 function App() {
@@ -30,6 +31,7 @@ function App() {
       {/* <SimpleFormValidation /> */}
       {/* <Form/> */}
       <UseRefHookComponent />
+      {/* <LiftingStateParent /> */}
     </>
   );
 }

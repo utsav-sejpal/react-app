@@ -39,21 +39,38 @@ export default function UseRefHookComponent() {
     // );
 
     // element access by useRef Hook
-    const inputElement = useRef();
-    const h1 = useRef();
+    // const inputElement = useRef();
+    // const h1 = useRef();
 
-    const focusInput = () => {
-        console.log(inputElement);
-        inputElement.current.focus();
-        h1.current.style.color = 'green';
+    // const focusInput = () => {
+    //     console.log(inputElement);
+    //     inputElement.current.focus();
+    //     h1.current.style.color = 'green';
+    // };
+
+    // return (
+    //     <>
+    //         <h1 ref={h1}>useRef Hook</h1>
+    //         <input type="text" ref={inputElement} />
+    //         <button onClick={focusInput}>Focus Input</button>
+    //     </>
+    // );
+
+
+    const [count, setCount] = useState(0);
+    const countRef = useRef(0);
+
+    const increaseCount = () => {
+        countRef.current = countRef.current + 1;
+        console.log(countRef.current);
+        // setCount(countRef.current);     
     };
 
     return (
-        <>
-            <h1 ref={h1}>useRef Hook</h1>
-            <input type="text" ref={inputElement} />
-            <button onClick={focusInput}>Focus Input</button>
-        </>
+        <div>
+            <h1>{countRef.current}</h1>
+            {/* <h1>Counter: {count}</h1> */}
+            <button onClick={increaseCount}>Increase</button>
+        </div>
     );
-
 }
