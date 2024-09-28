@@ -57,19 +57,22 @@ export default function UseRefHookComponent() {
     // );
 
 
+    // useState vs useRef 
     const [count, setCount] = useState(0);
     const countRef = useRef(0);
 
     const increaseCount = () => {
         countRef.current = countRef.current + 1;
         console.log(countRef.current);
-        // setCount(countRef.current);     
+        setCount(countRef.current);
     };
+
+    console.log('component rendered!');
 
     return (
         <div>
             <h1>{countRef.current}</h1>
-            {/* <h1>Counter: {count}</h1> */}
+            <h1>Counter: {count}</h1>
             <button onClick={increaseCount}>Increase</button>
         </div>
     );

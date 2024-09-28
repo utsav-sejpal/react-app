@@ -4,6 +4,7 @@ import ChildrenComponent from './ChildrenComponent';
 export default function ParentComponent() {
     const [data, setData] = useState('Parent Component Data.');
     const getData = (data) => {
+        console.log(data);
         setData(data);
     }
     return (
