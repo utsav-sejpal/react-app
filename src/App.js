@@ -14,6 +14,7 @@ import SimpleFormValidation from "./components/practice/form/SimpleFormValidatio
 import UseRefHookComponent from "./components/practice/hooks/UseRefHookComponent";
 import LiftingStateParent from './components/practice/props/lifting_stateup/ParentComponent';
 import StyleComponent from "./components/practice/style/StyleComponent";
+import ForwardRefParent from "./components/practice/hooks/forwarding_ref/ParentComponent";
 
 let name = "Test User";
 function App() {
@@ -31,8 +32,9 @@ function App() {
       {/* <Form /> */}
       {/* <SimpleFormValidation /> */}
       {/* <Form/> */}
-      <UseRefHookComponent />
+      {/* <UseRefHookComponent /> */}
       {/* <LiftingStateParent /> */}
+      <ForwardRefParent />
     </>
   );
 }
