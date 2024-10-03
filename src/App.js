@@ -15,6 +15,9 @@ import UseRefHookComponent from "./components/practice/hooks/UseRefHookComponent
 import LiftingStateParent from './components/practice/props/lifting_stateup/ParentComponent';
 import StyleComponent from "./components/practice/style/StyleComponent";
 import ForwardRefParent from "./components/practice/hooks/forwarding_ref/ParentComponent";
+import FragmentComponent from "./components/practice/fragment/FragmentComponent";
+import Component1 from "./components/practice/hooks/props_driling/Component1";
+import ContexParentComponent from "./components/practice/hooks/contex/ParentComponent";
 
 let name = "Test User";
 function App() {
@@ -34,7 +37,10 @@ function App() {
       {/* <Form/> */}
       {/* <UseRefHookComponent /> */}
       {/* <LiftingStateParent /> */}
-      <ForwardRefParent />
+      {/* <ForwardRefParent /> */}
+      {/* <FragmentComponent /> */}
+      {/* <Component1 /> */}
+      <ContexParentComponent />
     </>
   );
 }
