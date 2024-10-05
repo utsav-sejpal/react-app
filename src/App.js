@@ -18,6 +18,10 @@ import ForwardRefParent from "./components/practice/hooks/forwarding_ref/ParentC
 import FragmentComponent from "./components/practice/fragment/FragmentComponent";
 import Component1 from "./components/practice/hooks/props_driling/Component1";
 import ContexParentComponent from "./components/practice/hooks/contex/ParentComponent";
+import UseReducerComponent from "./components/practice/hooks/UseReducerComponent";
+import UseCallbackParent from "./components/practice/hooks/use_callback/ParentComponent";
+import UseMemoComponent from "./components/practice/hooks/UseMemoComponent";
+import CounterComponent from "./components/practice/hooks/custom_hook/CounterComponent";
 
 let name = "Test User";
 function App() {
@@ -41,6 +45,10 @@ function App() {
       {/* <FragmentComponent /> */}
       {/* <Component1 /> */}
       <ContexParentComponent />
+      {/* <UseReducerComponent /> */}
+      {/* <UseCallbackParent /> */}
+      {/* <UseMemoComponent /> */}
+      {/* <CounterComponent /> */}
     </>
   );
 }
