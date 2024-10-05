@@ -44,11 +44,11 @@ function App() {
       {/* <ForwardRefParent /> */}
       {/* <FragmentComponent /> */}
       {/* <Component1 /> */}
-      <ContexParentComponent />
+      {/* <ContexParentComponent /> */}
       {/* <UseReducerComponent /> */}
       {/* <UseCallbackParent /> */}
       {/* <UseMemoComponent /> */}
-      {/* <CounterComponent /> */}
+      <CounterComponent />
     </>
   );
 }

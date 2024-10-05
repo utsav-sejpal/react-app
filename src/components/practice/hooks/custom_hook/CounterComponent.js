@@ -2,7 +2,7 @@ import React from 'react';
 import useCounter from './useCounter';
 
 export default function CounterComponent() {
-    const { count, increment, decrement } = useCounter(0);
+    const { count, increment, decrement } = useCounter(1, 3, 4);
 
     return (
         <div>

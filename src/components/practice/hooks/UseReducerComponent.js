@@ -1,6 +1,8 @@
-import { useReducer } from "react";
+import { act, useReducer } from "react";
 
 function manageCount(state, action) {
+    console.log(state, action);
+
     switch (action.type) {
         case 'INCREMENT':
             return { ...state, count: state.count + 1 };
