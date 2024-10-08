@@ -22,33 +22,25 @@ import UseReducerComponent from "./components/practice/hooks/UseReducerComponent
 import UseCallbackParent from "./components/practice/hooks/use_callback/ParentComponent";
 import UseMemoComponent from "./components/practice/hooks/UseMemoComponent";
 import CounterComponent from "./components/practice/hooks/custom_hook/CounterComponent";
+import RouterComponent from "./components/practice/router/RouterComponent";
+import { BrowserRouter, Link, Route, Routes, Switch } from 'react-router-dom'
+import Page1Component from "./components/practice/router/Page1Component";
+import Page2Component from "./components/practice/router/Page2Component";
+import DashboardComponent from "./components/practice/router/DashboardComponent";
 
 let name = "Test User";
 function App() {
   return (
     <>
-      {/* <TestComponent /> */}
-      {/* <ClassComponent /> */}
-      {/* <SchoolComponent /> */}
-      {/* <ParentComponent /> */}
-      {/* <EventComponent /> */}
-      {/* <StateHookComponent /> */}
-      {/* <UseEffectHookComponent /> */}
-      {/* <ListAndKeysComponent /> */}
-      {/* <Todo /> */}
-      {/* <Form /> */}
-      {/* <SimpleFormValidation /> */}
-      {/* <Form/> */}
-      {/* <UseRefHookComponent /> */}
-      {/* <LiftingStateParent /> */}
-      {/* <ForwardRefParent /> */}
-      {/* <FragmentComponent /> */}
-      {/* <Component1 /> */}
-      {/* <ContexParentComponent /> */}
-      {/* <UseReducerComponent /> */}
-      {/* <UseCallbackParent /> */}
-      {/* <UseMemoComponent /> */}
-      <CounterComponent />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<RouterComponent />}>
+            <Route index element={<DashboardComponent />} />
+            <Route path="/page-1" element={<Page1Component />} />
+            <Route path="/page-2" element={<Page2Component />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
