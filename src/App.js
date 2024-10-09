@@ -1,34 +1,10 @@
-import logo from "./logo.svg";
-import "./App.css";
-import TestComponent from "./components/TestComponent";
-import ClassComponent from "./components/class_components/ClassComponent";
-import SchoolComponent from "./components/practice/props/SchoolComponent";
-import ParentComponent from "./components/practice/props/props_validation/ParentComponent";
-import EventComponent from "./components/practice/Events/EventComponent";
-import StateHookComponent from "./components/practice/hooks/StateHookComponent";
-import UseEffectHookComponent from "./components/practice/hooks/UseEffectHookComponent";
-import Todo from "./components/practice/list_and_keys/Todo";
-import ListAndKeysComponent from "./components/practice/list_and_keys/ListAndKeysComponent";
-import Form from "./components/practice/form/Form";
-import SimpleFormValidation from "./components/practice/form/SimpleFormValidation";
-import UseRefHookComponent from "./components/practice/hooks/UseRefHookComponent";
-import LiftingStateParent from './components/practice/props/lifting_stateup/ParentComponent';
-import StyleComponent from "./components/practice/style/StyleComponent";
-import ForwardRefParent from "./components/practice/hooks/forwarding_ref/ParentComponent";
-import FragmentComponent from "./components/practice/fragment/FragmentComponent";
-import Component1 from "./components/practice/hooks/props_driling/Component1";
-import ContexParentComponent from "./components/practice/hooks/contex/ParentComponent";
-import UseReducerComponent from "./components/practice/hooks/UseReducerComponent";
-import UseCallbackParent from "./components/practice/hooks/use_callback/ParentComponent";
-import UseMemoComponent from "./components/practice/hooks/UseMemoComponent";
-import CounterComponent from "./components/practice/hooks/custom_hook/CounterComponent";
 import RouterComponent from "./components/practice/router/RouterComponent";
 import { BrowserRouter, Link, Route, Routes, Switch } from 'react-router-dom'
 import Page1Component from "./components/practice/router/Page1Component";
 import Page2Component from "./components/practice/router/Page2Component";
 import DashboardComponent from "./components/practice/router/DashboardComponent";
+import PracticeComponent from "./components/PracticeComponent";
 
-let name = "Test User";
 function App() {
   return (
     <>
@@ -41,6 +17,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+
+      {/* <PracticeComponent /> */}
     </>
   );
 }
