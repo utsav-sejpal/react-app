@@ -1,5 +1,5 @@
 import RouterComponent from "./components/practice/router/RouterComponent";
-import { BrowserRouter, Link, Route, Routes, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Page1Component from "./components/practice/router/Page1Component";
 import Page2Component from "./components/practice/router/Page2Component";
 import DashboardComponent from "./components/practice/router/DashboardComponent";
