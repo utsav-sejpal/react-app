@@ -4,11 +4,12 @@ import Page1Component from "./components/practice/router/Page1Component";
 import Page2Component from "./components/practice/router/Page2Component";
 import DashboardComponent from "./components/practice/router/DashboardComponent";
 import PracticeComponent from "./components/PracticeComponent";
+import MainComponent from "./admin_template/layouts/MainComponent";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<RouterComponent />}>
             <Route index element={<DashboardComponent />} />
@@ -16,8 +17,8 @@ function App() {
             <Route path="/page-2" element={<Page2Component />} />
           </Route>
         </Routes>
-      </BrowserRouter>
-
+      </BrowserRouter> */}
+      <MainComponent />
       {/* <PracticeComponent /> */}
     </>
   );

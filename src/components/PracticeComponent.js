@@ -19,6 +19,7 @@ import ContexParentComponent from "./practice/hooks/contex/ParentComponent";
 import UseReducerComponent from "./practice/hooks/UseReducerComponent";
 import UseCallbackParent from "./practice/hooks/use_callback/ParentComponent";
 import UseMemoComponent from "./practice/hooks/UseMemoComponent";
+import CounterComponent from "./practice/hooks/custom_hook/CounterComponent";
 
 let name = "Test User";
 function PracticeComponent() {
