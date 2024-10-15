@@ -4,12 +4,20 @@ import Page1Component from "./components/practice/router/Page1Component";
 import Page2Component from "./components/practice/router/Page2Component";
 import DashboardComponent from "./components/practice/router/DashboardComponent";
 import PracticeComponent from "./components/PracticeComponent";
-import MainComponent from "./admin_template/layouts/MainComponent";
+import MainComponent from "./admin_template/IndexComponent.js";
+import "./admin_template/assets/css/dashboard.css"
+import "./admin_template/assets/js/dashboard.js"
+import SidebarComponent from "./admin_template/layouts/SidebarComponent.js";
+import NavbarComponent from "./admin_template/layouts/NavbarComponent.js";
+import FooterComponent from "./admin_template/layouts/FooterComponent.js";
+import IndexComponent from "./admin_template/IndexComponent.js";
+import UsersComponent from "./admin_template/UsersComponent.js";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* Nested routes example */}
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<RouterComponent />}>
             <Route index element={<DashboardComponent />} />
@@ -17,20 +25,24 @@ function App() {
             <Route path="/page-2" element={<Page2Component />} />
           </Route>
         </Routes>
-      </BrowserRouter>
-      {/* <MainComponent /> */}
-      {/* <PracticeComponent /> */}
-
-
-      {/* Simple example of Router functionality */}
-      {/* <BrowserRouter>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Routes>
-          <Route path="/" element={<PracticeComponent />} />
-          <Route path="/about" element={<DashboardComponent />} />
-        </Routes>
       </BrowserRouter> */}
+
+
+      <BrowserRouter>
+        <div className="wrapper">
+          <SidebarComponent />
+          <div className="main">
+            <NavbarComponent />
+            <main className="content">
+              <Routes>
+                <Route path="/" element={<IndexComponent />} />
+                <Route path="/users" element={<UsersComponent />} />
+              </Routes>
+            </main>
+            <FooterComponent />
+          </div>
+        </div>
+      </BrowserRouter >
     </>
   );
 }

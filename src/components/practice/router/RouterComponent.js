@@ -7,6 +7,7 @@ export default function RouterComponent() {
             <Link to="/">Dashboard</Link>
             <Link to="/page-1">Page 1</Link>
             <Link to="/page-2">Page 2</Link>
+            <Link to="/practice">practice</Link>
             <div style={{ margin: '10px' }}>
                 <Outlet />
             </div>
