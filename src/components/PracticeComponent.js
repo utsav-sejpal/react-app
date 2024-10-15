@@ -25,6 +25,7 @@ let name = "Test User";
 function PracticeComponent() {
     return (
         <>
+            <h1>Practice Component</h1>
             {/* <TestComponent /> */}
             {/* <ClassComponent /> */}
             {/* <SchoolComponent /> */}

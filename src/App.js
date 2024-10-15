@@ -1,5 +1,5 @@
 import RouterComponent from "./components/practice/router/RouterComponent";
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import Page1Component from "./components/practice/router/Page1Component";
 import Page2Component from "./components/practice/router/Page2Component";
 import DashboardComponent from "./components/practice/router/DashboardComponent";
@@ -9,7 +9,7 @@ import MainComponent from "./admin_template/layouts/MainComponent";
 function App() {
   return (
     <>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<RouterComponent />}>
             <Route index element={<DashboardComponent />} />
@@ -17,9 +17,20 @@ function App() {
             <Route path="/page-2" element={<Page2Component />} />
           </Route>
         </Routes>
-      </BrowserRouter> */}
-      <MainComponent />
+      </BrowserRouter>
+      {/* <MainComponent /> */}
       {/* <PracticeComponent /> */}
+
+
+      {/* Simple example of Router functionality */}
+      {/* <BrowserRouter>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Routes>
+          <Route path="/" element={<PracticeComponent />} />
+          <Route path="/about" element={<DashboardComponent />} />
+        </Routes>
+      </BrowserRouter> */}
     </>
   );
 }
