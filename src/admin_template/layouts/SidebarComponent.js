@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink as Link } from 'react-router-dom'
 
 export default function SidebarComponent() {
     return (
@@ -11,16 +11,28 @@ export default function SidebarComponent() {
                     </Link>
 
                     <ul className="sidebar-nav">
-                        <li className="sidebar-item active">
+                        <li className="sidebar-item">
                             <Link to="/" className="sidebar-link" href="index.html">
                                 <i className="align-middle" data-feather="sliders"></i>
                                 <span className="align-middle">Dashboard</span>
                             </Link>
                         </li>
-                        <li className="sidebar-item active">
+                        <li className="sidebar-item">
                             <Link to="/users" className="sidebar-link" href="index.html">
                                 <i className="align-middle" data-feather="sliders"></i>
                                 <span className="align-middle">Users</span>
+                            </Link>
+                        </li>
+                        <li className="sidebar-item">
+                            <Link to="/users/profile/2/JS" className="sidebar-link" href="index.html">
+                                <i className="align-middle" data-feather="sliders"></i>
+                                <span className="align-middle ms-3">Profile</span>
+                            </Link>
+                        </li>
+                        <li className="sidebar-item">
+                            <Link to="/users/about" className="sidebar-link" href="index.html">
+                                <i className="align-middle" data-feather="sliders"></i>
+                                <span className="align-middle ms-3">About</span>
                             </Link>
                         </li>
                     </ul>

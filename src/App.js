@@ -6,12 +6,16 @@ import DashboardComponent from "./components/practice/router/DashboardComponent"
 import PracticeComponent from "./components/PracticeComponent";
 import MainComponent from "./admin_template/IndexComponent.js";
 import "./admin_template/assets/css/dashboard.css"
+import "./admin_template/assets/css/custom.css"
 import "./admin_template/assets/js/dashboard.js"
 import SidebarComponent from "./admin_template/layouts/SidebarComponent.js";
 import NavbarComponent from "./admin_template/layouts/NavbarComponent.js";
 import FooterComponent from "./admin_template/layouts/FooterComponent.js";
 import IndexComponent from "./admin_template/IndexComponent.js";
-import UsersComponent from "./admin_template/UsersComponent.js";
+import UsersComponent from "./admin_template/users/UsersComponent.js";
+import 'bootstrap/dist/css/bootstrap.css';
+import ProfileComponent from "./admin_template/users/ProfileComponent.js";
+import AboutComponent from "./admin_template/users/AboutComponent.js";
 
 function App() {
   return (
@@ -27,7 +31,6 @@ function App() {
         </Routes>
       </BrowserRouter> */}
 
-
       <BrowserRouter>
         <div className="wrapper">
           <SidebarComponent />
@@ -36,7 +39,11 @@ function App() {
             <main className="content">
               <Routes>
                 <Route path="/" element={<IndexComponent />} />
-                <Route path="/users" element={<UsersComponent />} />
+                <Route>
+                  <Route path="/users" element={<UsersComponent />} />
+                  <Route path="/users/profile/:id/:subject" element={<ProfileComponent />} />
+                  <Route path="/users/about" element={<AboutComponent />} />
+                </Route>
               </Routes>
             </main>
             <FooterComponent />
