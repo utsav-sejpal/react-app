@@ -18,6 +18,7 @@ import ProfileComponent from "./admin_template/users/ProfileComponent.js";
 import AboutComponent from "./admin_template/users/AboutComponent.js";
 import EducationComponent from "./admin_template/users/EducationComponent.js";
 import JobComponent from "./admin_template/users/JobComponent.js";
+import PostComponent from "./admin_template/posts/PostComponent.js";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
                     <Route path="/users/about/education" element={<EducationComponent />} />
                     <Route path="/users/about/job" element={<JobComponent />} />
                   </Route>
+                  <Route path="/posts" element={<PostComponent />} />
                 </Route>
               </Routes>
             </main>
