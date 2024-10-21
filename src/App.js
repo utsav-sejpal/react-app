@@ -19,6 +19,7 @@ import AboutComponent from "./admin_template/users/AboutComponent.js";
 import EducationComponent from "./admin_template/users/EducationComponent.js";
 import JobComponent from "./admin_template/users/JobComponent.js";
 import PostComponent from "./admin_template/posts/PostComponent.js";
+import PostForm from "./admin_template/posts/PostForm.js";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
                     <Route path="/users/about/job" element={<JobComponent />} />
                   </Route>
                   <Route path="/posts" element={<PostComponent />} />
+                  <Route path="/create-post" element={<PostForm />} />
                 </Route>
               </Routes>
             </main>

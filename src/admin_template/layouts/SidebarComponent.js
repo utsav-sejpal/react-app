@@ -41,6 +41,12 @@ export default function SidebarComponent() {
                                 <span className="align-middle">Posts</span>
                             </Link>
                         </li>
+                        <li className="sidebar-item">
+                            <Link to="/create-post" className="sidebar-link" href="index.html">
+                                <i className="align-middle" data-feather="sliders"></i>
+                                <span className="align-middle">Create Post</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
