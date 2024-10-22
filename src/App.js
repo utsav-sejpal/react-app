@@ -20,6 +20,7 @@ import EducationComponent from "./admin_template/users/EducationComponent.js";
 import JobComponent from "./admin_template/users/JobComponent.js";
 import PostComponent from "./admin_template/posts/PostComponent.js";
 import PostForm from "./admin_template/posts/PostForm.js";
+import { Counter } from "./components/practice/redux/Counter.js";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
                   </Route>
                   <Route path="/posts" element={<PostComponent />} />
                   <Route path="/create-post" element={<PostForm />} />
+                  <Route path="/counter" element={<Counter />} />
                 </Route>
               </Routes>
             </main>
