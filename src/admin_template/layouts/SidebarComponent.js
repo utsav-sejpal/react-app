@@ -1,7 +1,9 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { NavLink as Link } from 'react-router-dom'
 
 export default function SidebarComponent() {
+    let count = useSelector((state) => state.counter.value)
     return (
         <>
             <nav id="sidebar" className="sidebar js-sidebar">
@@ -50,7 +52,7 @@ export default function SidebarComponent() {
                         <li className="sidebar-item">
                             <Link to="/counter" className="sidebar-link" href="index.html">
                                 <i className="align-middle" data-feather="sliders"></i>
-                                <span className="align-middle">Counter</span>
+                                <span className="align-middle">Counter {count}</span>
                             </Link>
                         </li>
                     </ul>

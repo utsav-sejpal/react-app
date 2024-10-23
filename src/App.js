@@ -7,7 +7,6 @@ import PracticeComponent from "./components/PracticeComponent";
 import MainComponent from "./admin_template/IndexComponent.js";
 import "./admin_template/assets/css/dashboard.css"
 import "./admin_template/assets/css/custom.css"
-import "./admin_template/assets/js/dashboard.js"
 import SidebarComponent from "./admin_template/layouts/SidebarComponent.js";
 import NavbarComponent from "./admin_template/layouts/NavbarComponent.js";
 import FooterComponent from "./admin_template/layouts/FooterComponent.js";

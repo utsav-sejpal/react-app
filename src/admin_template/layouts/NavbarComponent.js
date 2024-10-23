@@ -1,13 +1,16 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 
 export default function NavbarComponent() {
+    let count = useSelector((state) => state.counter.value)
+
     return (
         <>
             <nav className="navbar navbar-expand navbar-light navbar-bg">
                 <a className="sidebar-toggle js-sidebar-toggle">
                     <i className="hamburger align-self-center"></i>
                 </a>
-
+                <h4>{count}</h4>
                 <div className="navbar-collapse collapse">
                     <ul className="navbar-nav navbar-align">
                         <li className="nav-item">
