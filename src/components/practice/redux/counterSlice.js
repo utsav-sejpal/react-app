@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     value: 0,
+    loading: false,
 }
 
 export const counterSlice = createSlice({
@@ -23,10 +24,13 @@ export const counterSlice = createSlice({
             console.log(action);
             state.value += action.payload
         },
+        toggleLoaderValue: (state) => {
+            state.loading = !state.loading
+        }
     },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { increment, decrement, incrementByAmount, toggleLoaderValue } = counterSlice.actions
 
 export default counterSlice.reducer

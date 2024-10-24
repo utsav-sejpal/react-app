@@ -3,3 +3,7 @@ https://github.com/adminkit/adminkit
 
 React Router
 https://www.geeksforgeeks.org/reactjs-router/
+
+Chrome Extension
+Redux Dev Tools
+
