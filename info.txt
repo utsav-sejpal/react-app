@@ -7,3 +7,23 @@ https://www.geeksforgeeks.org/reactjs-router/
 Chrome Extension
 Redux Dev Tools
 
+https://www.netlify.com/
+
+Clone this repo for check middlewares
+https://github.com/lata-makdiya/my-app
+
+Project Flow:
+Create login page (add dummy credentials)
+  if login then should not redirect to login page, same for dashboard
+CRUD of tasks
+  Create page for forms
+Add priority badges (high, medium, low)
+Add status (started, in progress, finished)
+Task scheduling (add date-time for start/end task)
+    show status according to date-time
+    show red color date-time if task not started on given time
+Filter Options: Enable filtering tasks by priority, status, or due date.
+Task History: Maintain a history of completed tasks that users can view.
+    show task information line by line (example -> design related task is started)
+ ------------------ END ----------------------------
+Best Of Luck to ALL
